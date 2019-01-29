@@ -15,7 +15,7 @@ S = "${WORKDIR}/ViennaCL-${PV}"
 
 inherit cmake
 
-DEPENDS += "virtual/opencl"
+DEPENDS += "virtual/opencl-icd"
 
 do_compile_append() {
     oe_runmake

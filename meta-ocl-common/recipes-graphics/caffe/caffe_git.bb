@@ -22,7 +22,7 @@ PACKAGECONFIG[lmdb] = "-DUSE_LMDB=ON,-DUSE_LMDB=OFF,lmdb"
 PACKAGECONFIG[clblas] = "-DUSE_CLBLAS=ON -DUSE_CLBLAST=OFF,-DUSE_CLBLAS=OFF,clblas"
 PACKAGECONFIG[clblast] = "-DUSE_CLBLAST=ON -DUSE_CLBLAS=OFF,-DUSE_CLBLAST=OFF,clblast"
 
-DEPENDS += "virtual/opencl opencv viennacl openblas boost protobuf protobuf-native glog gflags snappy"
+DEPENDS += "virtual/opencl-icd opencv viennacl openblas boost protobuf protobuf-native glog gflags snappy"
 
 PACKAGES += "\
     ${PN}-python \

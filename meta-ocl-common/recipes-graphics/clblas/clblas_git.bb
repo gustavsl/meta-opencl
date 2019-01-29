@@ -18,6 +18,6 @@ inherit cmake pythonnative
 
 EXTRA_OECMAKE += "-DSUFFIX_LIB= -DUSE_SYSTEM_GTEST=ON -DBUILD_TEST=OFF -DPREBUILT_CLT_PATH=${WORKDIR}/clt"
 
-DEPENDS += "virtual/opencl"
+DEPENDS += "virtual/opencl-icd"
 
 FILES_${PN}-dev += "${libdir}/cmake"

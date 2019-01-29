@@ -20,6 +20,6 @@ inherit cmake
 
 EXTRA_OECMAKE += ""
 
-DEPENDS += "virtual/opencl"
+DEPENDS += "virtual/opencl-icd"
 
 FILES_${PN}-dev += "${libdir}/cmake"
